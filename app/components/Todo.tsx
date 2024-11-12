@@ -3,28 +3,13 @@ import { Checkbox } from "./ui/CheckBox";
 import { ImHourGlass } from "react-icons/im";
 import { FcExpired } from "react-icons/fc";
 import { Tooltip } from "./ui/Tooltip";
-import data from "./meta";
-import { json } from "@remix-run/node"; 
 import { useLoaderData } from "@remix-run/react";
 
-export const loader = async () => {
-  return json([
-    { id: "1", name: "Pants" },
-    { id: "2", name: "Jacket" },
-  ]);
-};
 
 
 
 export default function Todo() {
-  
-  const fakeData = useLoaderData()
-
-  console.log(fakeData)
-  
-  const todos = data["todos"];
-
-
+  const todos : [] = useLoaderData();
 
   const compareDates = (date1: number, date2 : number) => {
     return date1 < date2

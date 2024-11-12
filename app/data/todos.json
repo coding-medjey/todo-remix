@@ -1,3 +1,80 @@
 {
-    "todos":[]
+    "todos":[
+        {
+            "id":1,
+            "task" : "first taks to do whatever you want to do is the first task",
+            "isCompleted" : true,
+            "dueDate" : 1731432073090
+
+        },
+        {
+            "id":2,
+            "task" : "first taks to do",
+            "isCompleted" : false,
+            "dueDate" : null
+        },
+        {
+            "id":3,
+            "task" : "first taks to do whatever you want to do is the first task",
+            "isCompleted" : true,
+            "dueDate" : null
+
+        },
+        {
+            "id":4,
+            "task" : "first taks to do",
+            "isCompleted" : false,
+            "dueDate" : 1731432073090
+        },{
+            "id":5,
+            "task" : "first taks to do whatever you want to do is the first task",
+            "isCompleted" : true,
+            "dueDate" : 1731432073090 
+
+        },
+        {
+            "id":6,
+            "task" : "first taks to do",
+            "isCompleted" : false,
+            "dueDate" : null
+        },
+        {
+            "id":7,
+            "task" : "first taks to do whatever you want to do is the first task",
+            "isCompleted" : true,
+            "dueDate" : null
+
+        },
+        {
+            "id":8,
+            "task" : "first taks to do",
+            "isCompleted" : false,
+            "dueDate" : 1731432073090
+        },{
+            "id":9,
+            "task" : "first taks to do whatever you want to do is the first task",
+            "isCompleted" : true,
+            "dueDate" : 1731432073090
+
+        },
+        {
+            "id":10,
+            "task" : "first taks to do",
+            "isCompleted" : false,
+            "dueDate" : null
+        },
+        {
+            "id":11,
+            "task" : "first taks to do whatever you want to do is the first task",
+            "isCompleted" : true,
+            "dueDate" : null
+
+        },
+        {
+            "id":12,
+            "task" : "first taks to do",
+            "isCompleted" : false,
+            "dueDate" : 1731432073090
+        }
+    ]
 }
