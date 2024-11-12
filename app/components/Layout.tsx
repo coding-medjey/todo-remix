@@ -22,6 +22,7 @@ export default function Layout() {
         height="70%"
         width="80%"
         borderRadius="md"
+       
       >
         <Header/>
         <InputBox/>
