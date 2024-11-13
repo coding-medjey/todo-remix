@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Button, Flex, Heading } from "@chakra-ui/react";
 import { IoIosCheckbox } from "react-icons/io";
 
 export default function Header (){
@@ -17,6 +17,7 @@ export default function Header (){
           <IoIosCheckbox style={{ fontSize: '1.2em' }} />
           My Todos
         </Heading>
+        
       </Flex>
     )
 }

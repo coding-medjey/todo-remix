@@ -1,7 +1,8 @@
-import { Container, Box} from "@chakra-ui/react";
+import { Container, Box, Button } from "@chakra-ui/react";
 import InputBox from "./InputBox";
 import Header from "./Header";
 import Todo from "./Todo";
+import { Form } from "@remix-run/react";
 
 export default function Layout() {
   return (
@@ -15,6 +16,7 @@ export default function Layout() {
       display="flex"
       alignItems="center"
       justifyContent="center"
+      flexDirection={"column"}
     >
       <Box
         textAlign="center"
@@ -22,12 +24,32 @@ export default function Layout() {
         height="70%"
         width="80%"
         borderRadius="md"
-       
       >
-        <Header/>
-        <InputBox/>
-        <Todo/>
+        <Header />
+        <InputBox />
+        <Todo />
       </Box>
+      <Form method="delete">
+        <Button
+          type="submit"
+          backgroundColor="black"
+          color="white"
+          size="sm"
+          _hover={{
+            backgroundColor: "gray.800",
+          }}
+          _active={{
+            backgroundColor: "gray.700",
+          }}
+          borderRadius="0.2rem"
+          name="_action"
+          value="delete"
+          margin={"1rem"}
+          variant={"subtle"}
+        >
+          Delete Expired and Compeleted
+        </Button>
+      </Form>
     </Container>
   );
 }

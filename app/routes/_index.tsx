@@ -1,5 +1,5 @@
 import Layout from "~/components/Layout";
-import { getTodos, addTodo, changeStatus } from "~/data/todos";
+import { getTodos, addTodo, changeStatus, deleteExpiredAndCompleted } from "~/data/todos";
 import type { LoaderFunction, ActionFunction } from "@remix-run/node";
 
 export const loader: LoaderFunction = async () => {
@@ -12,6 +12,7 @@ export const action: ActionFunction = async ({ request }) => {
   try {
     const body = await request.formData();
     const {_action , ...values} = Object.fromEntries(body)
+    console.log(_action,values)
     if(_action === "create"){
       const task = body.get("task")?.trim();
       const date = body.get("date");
@@ -30,8 +31,9 @@ export const action: ActionFunction = async ({ request }) => {
       addTodo(data)
   
     }else if(_action === "put"){
-      console.log(values)
       changeStatus(values["id"])
+    }else{
+      deleteExpiredAndCompleted()
     }
     
     return { ok: true };

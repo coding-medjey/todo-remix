@@ -1,9 +1,10 @@
-import { Box, Button, Input } from "@chakra-ui/react";
+import { Box, Button, Container, Input } from "@chakra-ui/react";
 import { Field } from "~/components/ui/Field";
 import { Form } from "@remix-run/react";
 
 export default function InputBox() {
   return (
+    <Container>
     <Form method="post">
       <Box
         width="75%"
@@ -75,5 +76,7 @@ export default function InputBox() {
         </Button>
       </Box>
     </Form>
+   
+    </Container>
   );
 }
