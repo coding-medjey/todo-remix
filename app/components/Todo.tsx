@@ -72,6 +72,7 @@ export default function Todo() {
                 <Checkbox
                   size={["sm", "md"]}
                   height={["0.875rem", "1rem"]}
+                  textDecoration={todo.isCompleted ?"line-through" : ""}
                   checked={todo.isCompleted}
                   disabled={todo.dueDate && compareDates(todo.dueDate, Date.now())}
                   onChange={() => handleCheckboxChange(todo)}
